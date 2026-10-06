@@ -344,3 +344,21 @@ html.intro-active, html.intro-active body{overflow:hidden;}
 .vmodal-close:hover{border-color:var(--teal);color:var(--teal);transform:scale(1.08);}
 .vmodal-close:focus-visible{outline:2px solid var(--teal);outline-offset:3px;}
 html.vmodal-lock, html.vmodal-lock body{overflow:hidden;}
+
+/* ===================== BIG SCREENS (wider than 1700px) =====================
+   Laptop-size screens are unchanged. On large monitors the page uses more of
+   the width and the hero headline + reel scale up so the hero fills the space. */
+@media (min-width:981px){.a-hero-eyebrow{white-space:nowrap;}}
+@media (min-width:1700px){
+  #site .a-wrap{max-width:1920px;}
+  .a-stats .stats-row{max-width:1792px;}
+  .a-hero{--hero-offset:max(0px, calc((100vw - 1920px) / 2));}
+  .a-hero-grid{grid-template-columns:minmax(300px,calc(900px + var(--hero-offset))) 1fr;min-height:clamp(560px,84vh,1000px);}
+  .a-hero-photo{max-width:1560px;min-height:clamp(360px,84vh,1000px);}
+  .a-hero-eyebrow{font-size:15px;margin-bottom:26px;}
+  .a-hero-title{font-size:clamp(60px,3.7vw,100px);margin-bottom:28px;}
+  .a-reel{max-width:clamp(520px,29vw,780px);margin-bottom:30px;}
+  .a-reel-label,.a-reel-sound{font-size:13px;}
+  .a-hero-sub{font-size:21px;max-width:640px;margin-bottom:30px;}
+  .a-hero-actions .a-btn-primary,.a-hero-actions .a-btn-ghost{font-size:17px;padding:19px 36px;}
+}
