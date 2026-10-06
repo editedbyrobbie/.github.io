@@ -362,3 +362,6 @@ html.vmodal-lock, html.vmodal-lock body{overflow:hidden;}
   .a-hero-sub{font-size:21px;max-width:640px;margin-bottom:30px;}
   .a-hero-actions .a-btn-primary,.a-hero-actions .a-btn-ghost{font-size:17px;padding:19px 36px;}
 }
+
+/* minimal belt: hide the strap lettering on phones, where the strap runs off the screen edges */
+@media (max-width:700px){.a-belt-svg .strap-label{display:none;}}
