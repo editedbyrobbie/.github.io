@@ -37,7 +37,7 @@ a{color:inherit;text-decoration:none;}
 .marquee-fade{position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;}
 .marquee-fade.left{left:0;}
 .marquee-fade.right{right:0;}
-.marquee-track{display:flex;width:max-content;animation:marquee-scroll 42s linear infinite;}
+.marquee-track{display:flex;width:max-content;animation:marquee-scroll 50s linear infinite;}
 .marquee-wrap:hover .marquee-track{animation-play-state:paused;}
 @keyframes marquee-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
